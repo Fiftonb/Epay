@@ -2,6 +2,15 @@
 
 **彩虹易支付系统** 由郑州追梦网络科技有限公司开发，是一款开源的免签约支付产品，能够帮助开发者一站式接入支付宝、微信、财付通、QQ钱包等多种支付方式，实现高效的支付集成。
 
+**项目仓库地址**：  
+🔗 [https://github.com/Fiftonb](https://github.com/Fiftonb)
+
+**Git 远程说明**：
+- `origin`：`https://github.com/Fiftonb/Epay.git`
+- `upstream`：`https://github.com/maajiko/Epay.git`
+- 推送自己的修改请使用 `origin`
+- 同步原项目更新请使用 `upstream`
+
 ---
 
 ## 功能特色
@@ -12,6 +21,23 @@
 - **安全可靠**：采用 RSA 公私钥验证，支持风控检测和黑名单管理  
 - **插件扩展**：支持丰富的支付插件，可根据需求灵活扩展  
 - **移动端优化**：全新的手机版支付页面，支持各种移动端支付场景  
+
+---
+
+## 部署环境要求
+
+- **PHP 版本**：`PHP 7.4` 及以上
+- **数据库**：`MySQL 5.6` 及以上，推荐 `MySQL 5.7/8.0`
+- **Web 服务**：支持 PHP 的 `Nginx` 或 `Apache`
+- **必备扩展**：`PDO`、`pdo_mysql`、`openssl`、`curl`、`mbstring`、`json`
+- **推荐扩展**：`gd` 或其他图像扩展（用于验证码等功能）
+- **依赖管理**：如需重新安装 PHP 依赖，需使用 `Composer`
+- **目录权限**：项目根目录需具备配置写入权限，安装阶段可写入 `config.php`
+- **生产建议**：
+  - 部署完成后保留 `install/install.lock`
+  - 建议删除或限制访问 `install/` 目录
+  - 建议启用 HTTPS
+  - 建议为后台开启 TOTP 二次验证
 
 ---
 
@@ -38,16 +64,6 @@
 
 ---
 
-## 打赏二维码
-
-如果你觉得对你有帮助，欢迎打赏支持 ❤️
-
-### 微信打赏
-<img src="https://cdn.nodeimage.com/i/kgpolIW90QcsVO85dhO0li6ZDj40KttH.webp" width="180" />
-
-
----
-
 ## 推荐插件
 
 推荐使用 **Bepusdt** 插件进行 USDT（TRC20）收款。  
@@ -57,4 +73,3 @@ Bepusdt 是适用于彩虹易支付系统的 USDT 收款插件，收到的货币
 🔗 [https://github.com/v03413/bepusdt](https://github.com/v03413/bepusdt)
 
 ---
-
